@@ -1,0 +1,24 @@
+body { font-family: "Helvetica", "Arial", sans-serif; line-height: 1.2; padding: 2em 1em; font-size: 16px; background-color: #EEE; color: #555; }
+
+#video-list { margin: 0 auto }
+
+div.video-block { display: inline-block; margin: 10px; vertical-align: top }
+div.video-block img { border: 0; margin-bottom: 4px; width: 100% }
+div.video-block a { color: #333; text-decoration: none }
+div.video-block a.video { font-weight: bold }
+div.video-block .date { display: block; font-size: 80%; color: #555; }
+div.video-block .title { padding: 4px 0; display: block }
+div.video-block a.channel { display: block; text-align: right; font-size: 90%; color: #555; font-style: italic}
+
+a.header {display:block; text-align: center; font-size: 400%; text-decoration: none; color: #C33; font-family: monospace; margin: 0.33em}
+
+.load-box { margin: 20px; text-align: center }
+
+#status { width: 60%; height: 3em; margin: 1em auto; background-color: #DDD }
+#status-bar { background-color: #C33; height: 100%; width: 0; }
+
+#intro { margin: 2em auto; max-width: 40em; line-height: 1.5 }
+
+input { font-size: 24px; padding: 10px; background-color: #C33; color: #EEE }
+
+.error { text-align: center; font-weight: bold; color: #C33 }

@@ -1,0 +1,24 @@
+<?php
+
+define('API_KEY', 'zzzz'); // google client developer key
+define('OAUTH_CLIENT', '12345-zxcvb.apps.googleusercontent.com'); // google oauth client key
+define('OAUTH_SECRET', 'zzzzz'); // google oauth secret
+define('OAUTH_REDIRECT_URI', 'https://www.chronosubs.com/');
+
+define('CHANNEL_RECENT_KEY_PREFIX', 'lookupkey-');
+
+function GetMemcache() {
+    static $memcache = false;
+    if ($memcache === false) {
+        $memcache = new Memcached;
+        if (!$memcache->getServerList()) {
+            $memcache->addServer('127.0.0.1', 11211);
+        }
+        $memcache->setOptions([
+            Memcached::OPT_BINARY_PROTOCOL => true,
+            Memcached::OPT_PREFIX_KEY => 'chronosubs',
+        ]);
+    }
+    return $memcache;
+}
+

@@ -1,0 +1,22 @@
+{
+    "name": "erorus/chronosubs",
+    "description": "chronosubs.com lists videos from your YouTube subscriptions in chronological order",
+    "type": "project",
+    "keywords": ["youtube","oauth","google"],
+    "homepage": "https://www.chronosubs.com/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Gerard Dombroski",
+            "homepage": "https://everynothing.net/"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/erorus/chronosubs"
+    },
+    "require": {
+        "google/apiclient": "~2.0",
+        "php": "^7.0",
+        "ext-memcached": "*"
+    }
+}
